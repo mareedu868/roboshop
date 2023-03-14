@@ -1,4 +1,4 @@
 FROM nginx
-RUN rm -rf /usr/share/html/
-ADD static /usr/share/html/
+RUN rm -rf /usr/share/nginx/html/
+ADD static /usr/share/nginx/html/
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
