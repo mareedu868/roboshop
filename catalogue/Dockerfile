@@ -6,9 +6,10 @@ WORKDIR /opt/server
 
 COPY package.json /opt/server/
 
-RUN npm install
+# npm install get the dependencies of node js project
+RUN npm install 
 
 COPY server.js /opt/server/
 
-CMD ["node", "server.js"]
+ENTRYPOINT ["node", "server.js"]
 
