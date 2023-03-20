@@ -38,13 +38,6 @@ services:
   mysql:
     image: mysql:v1
     container_name: mysql
-    
-  
-
-
-
-
-
 networks:
   robo:
     driver: bridge
